@@ -21,12 +21,4 @@ if __name__ == '__main__':
     )"""
     cursor.execute(sql)
     
-    sql = """CREATE TABLE bezahlvorgang (
-        kontoid INTEGER, wareid INTEGER, anzahl INTEGER
-    )"""
-    cursor.execute(sql)
-   
-    
-    
-    
     pass
