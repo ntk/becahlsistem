@@ -21,4 +21,19 @@ if __name__ == '__main__':
     )"""
     cursor.execute(sql)
     
+    sql = """ SELECT * FROM ? WHERE id = ?"""
+    werte = ("konto", 5)
+    cursor.execute(sql, werte)
+    daten = cursor.fetchone()
+    
+    sql = """CREATE TABLE bezahlvorgang (
+        kontoid INTEGER, wareid INTEGER, anzahl INTEGER
+    )"""
+    cursor.execute(sql)
+    
+    #test..
+   
+    
+    
+    
     pass
